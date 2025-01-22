@@ -15,6 +15,8 @@ function contar() {
         passo = 1
     }
 
+    res.innerHTML = "Contando:"
+
     if (inicio < fim) {
         for (var i = inicio; i <= fim; i += passo) {
             res.innerHTML += ` &#x1F449; ${i}`;
