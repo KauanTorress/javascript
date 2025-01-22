@@ -6,7 +6,7 @@ function contar() {
     res.innerHTML = ''
 
     if (inicio === 0 || fim === 0 || passo === 0) {
-        res.innerHTML += "<p >Impossível contar: preencha todos os campos!</p> "
+        res.innerHTML += "<p>Impossível contar: preencha todos os campos!</p> "
         return
     }
 
