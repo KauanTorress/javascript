@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nacionalidade</title>
+</head>
+<body>
+    <h1>Brasileiro ou Estrangeiro?</h1>
+    Seu país: <input type="text" id="txtp" size="15"
+    placeholder="- - Digite seu país - -"> 
+    <input type="button" value="verificar" onclick="escolher()">
+    <div id="res">
+
+    </div>
+
+    <script>
+        function escolher(){ 
+            var país = document.getElementById('txtp')
+            var r = document.getElementById('res')
+
+            r.innerHTML = `<p>Vivendo em ${país.value}</p>`
+            if(país.value != 'Brasil') {
+                r.innerHTML += '<p>Você é <strong>Estrangeiro</strong>!</p>'
+            } else {
+                 r.innerHTML += '<p>Você é <strong>Brasileiro</strong>!</p>'
+            }
+        }    
+    </script>
+</body>
+</html>

@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Modelo</title>
+    <link rel="stylesheet" href="estilo.css">
+</head>
+<body>
+    <header>
+        <h1>Analisador de Números</h1>
+    </header>
+    <section>
+        <div>
+            <label for="tnum">Número (entre 1 e 100): </label>
+            <input type="number" name="tnum" id="tnum">
+            <input type="submit" value=" adicionar "
+            onclick="adicionar()">
+        </div>
+        <div>
+            <textarea name="res" id="res" readonly>Digite um Número acima...</textarea>
+            <p>
+                <input type="submit" value=" finalizar " onclick="finalizar()">
+                
+            </p>
+            <h2>Resultados:</h2>
+            <p id="restxt"></p>
+        </div>
+    </section>
+    <footer>
+        <p>&copy; CursoemVídeo</p>
+    </footer>
+    <script src="script.js"></script>
+</body>
+</html>
